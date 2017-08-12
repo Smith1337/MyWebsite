@@ -54,7 +54,7 @@ width: 1170;
 .footer {
   color: white;
   height: 50px;
-  width: 100%;
+  width: 105%;
   padding: 10px;
   background-color: purple;
   padding-left: 15%;
@@ -64,4 +64,14 @@ width: 1170;
 .smaller {
   height: 200px;
     width : 250px;
+}
+.down4 {
+  margin: 10px
+}
+
+#map {
+  width: 100%;
+}
+.upper{
+  margin: 10px
 }
