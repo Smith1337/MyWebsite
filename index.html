@@ -3,18 +3,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
   <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
   <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwhwzuYqcXRjqamI5AdLCsl9x77TkLVpE&callback=initMap"></script>
+</head>
   <div class="ui top inverted purple fixed menu">
     <a class="item" href="#intro">Introduction</a>
     <a class="item" href="#bio">Biography</a>
     <a class="item" href="#sports">Favorite Sports</a>  
     <a class="item" href="#games"> Favorite Games</a>
   </div>
-</head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   <div class="banner"> 
     <h1 class="down white"> Welcome to my <strong>amazing</strong> Website!</h1> 
-    <p> Hi user, thank you for clicking on my website.</p>
+    <p class= " side white"> Hi user, thank you for clicking on my website.</p>
   </div>
+  
 <div class="website">
  
 
@@ -62,26 +74,25 @@
      </div>
    
      <div class="nine wide column">
-    
-         <div class= "box3 animated bounceInRight ui purple inverted segment"  > <h1 class= "white"><i class="male icon"></i>  Biography </h1>
-           <p class= "popup1 ui segment"> Hi my name is Smeet Shah, I am 12 years old. My birthday is <strong>June 26, 2005.</strong> I was born in <strong>Toronto, Ontario.</strong> I live in Toronto, Ontario and I go to <strong>Amesbuy Middle School.</strong> Im in the seventh grade. </p>
-         </div>
+    <div class=" ui raised segments">
+         <div class= "box3 animated bounceInRight ui purple inverted segment"> <h1 class= "white"><i class="male icon"></i>  Biography </h1>
+       </div>
+      <p class= "popup1 ui segment"> Hi my name is Smeet Shah, I am 12 years old. My birthday is <strong>June 26, 2005.</strong> I was born in <strong>Toronto, Ontario.</strong> I live in Toronto, Ontario and I go to <strong>Amesbuy Middle School.</strong> Im in the seventh grade. </p> </div>
 
-         <div class="box4 animated bounceInLeft ui purple inverted segment" ><h1><p class= "white"><i class="soccer icon"></i> Some of my favorite sports are</p></h1>
-           <ol class= "ui segment"> <li>Basketball</li>
-             <li> Soccer (goal keeper)</li>
-             <li> Baseball (short stop)</li>
-           </ol>
-           <body/></div>
+        <div class= "ui raised segments"> <div class="box4 animated bounceInLeft ui purple inverted segment" ><h1><p class= "white"><i class="soccer icon"></i> Some of my favorite sports are</p></h1>
+          <body/></div>
+          <ol class= "ui segment"> <li>Basketball</li>
+          <li> Soccer (goal keeper)</li>
+          <li> Baseball (short stop)</li>
+          </ol></div>
        
        
         <div class="ui raised segments">
           <div class="box 5 animated bounceInRight ui purple inverted segment"> <h1 class= "white"> <i class="game icon"></i> Some of my favorite video games </h1>
-
-           <ol class= "ui segment"> <li> 2k17 and all the other 2k's (Im a very big fan of basketball video games and in genral</li>
-             <li> MLB the Show 16/17</li>
-             <li> All the Pokemon games except Pokemon Ranger that game was trash</li></ol>
          </div>
+          <ol class= "ui segment"> <li> 2k17 and all the other 2k's (Im a very big fan of basketball video games and in genral</li>
+            <li> MLB the Show 16/17</li>
+            <li> All the Pokemon games except Pokemon Ranger that game was trash</li></ol>
      </div>
          
 
@@ -164,15 +175,44 @@
          <div class="ui purple inverted segment">
            <h1 class="white"> <i class="map pin icon"></i> Check-In </h1>
            <div class="item">
-             <img class="smaller" src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14719837_209523122819333_3953303897438683136_n.jpg">
            <div class="image">
            </div>
-           <p class="ui segment">  </p>
          </div>
        </div>
-     </div>
-     
-   </div>
+        <div class= "ui segment">
+         <div class="ui items">
+           <div class="item">
+             <div class="image">
+               <img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14719837_209523122819333_3953303897438683136_n.jpg">
+             </div>
+             <div class="content">
+               <a class="header">Air Canada Center</a>
+               <div class="meta">
+                 <span></span>
+               </div>
+               <div class="description">
+                 <p>Air Canada Centre, Toronto, ON M5E 1Z8</p>
+               </div>
+               <div class="extra">
+                 "The Me to We concert that took place at the Air Canada Center was really fun! Special preformences from Zendaya, Macklemore and Lily Singh"
+               </div>
+               <div id='map'></div>
+             </div>
+           </div>
+        </div> 
+       </div>
+         <div class="ui raised segments"> 
+           <div class="ui purple inverted segment">
+             <h1 class="white"> Comments </h1>
+           </div>
+           <div class="ui segment">
+             <div class="fb-comments" data-href="https://smith1337.github.io/MyWebsite/" data-width="105%"  data-numposts="5"></div>
+           </div>
+         </div>
+       </div>
+       </div>
+       
+
      <div class="three wide column">
        <div class="ui raised segments">
          <div class="ui purple inverted segment">
@@ -197,10 +237,10 @@
            </div>
            <div class="ui fluid card">
              <div class="image">
-               <img src="https://semantic-ui.com/images/avatar/large/elliot.jpg">
+               <img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif">
              </div>
              <div class="content">
-               <a class="header">Elliot Fu</a>
+               <a class="header">John Bautista</a>
              </div>
            </div>
          </div>
@@ -224,7 +264,7 @@
     </button>
   
   
-</div> 
+</div>
 </body>
       
 
