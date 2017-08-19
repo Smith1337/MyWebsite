@@ -32,16 +32,18 @@ body {
 }
 
 .website{
-  padding-left: %;
-  padding-right: 20%;
+  padding-left: 2%;
+  padding-right:5%;
   padding-top: 50px;
 }
 
 .banner{
   background-image: url(https://pbs.twimg.com/media/Ce7io99XIAALgCw.jpg);
   margin-top: 40px;
-width: 1170;
+width: 1250;
   height: 300px;
+  padding-left: 20px;
+ 
 }
 
 .white{
@@ -74,4 +76,8 @@ width: 1170;
 }
 .upper{
   margin: 10px
+}
+
+.down3{
+  padding-top: 25px;
 }
