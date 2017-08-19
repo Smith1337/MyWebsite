@@ -1,4 +1,7 @@
 <head>
+  <title>Smeet's Website</title>
+  <link rel="shortcut icon" href="http://i0.kym-cdn.com/photos/images/newsfeed/000/101/781/Y0UJC.png" type="image/x-icon">
+  
   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
   <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
@@ -12,6 +15,7 @@
     <a class="item" href="#bio">Biography</a>
     <a class="item" href="#sports">Favorite Sports</a>  
     <a class="item" href="#games"> Favorite Games</a>
+    <a class="item" href="#number"> Lucky Numbers</a>
   </div>
 <body>
   <div id="fb-root"></div>
@@ -23,7 +27,7 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
   <div class="banner"> 
-    <h1 class="down white"> Welcome to my <strong>amazing</strong> Website!</h1> 
+    <h1 class="down white" id="intro"> Welcome to my <strong>amazing</strong> Website!</h1> 
     <p class= " side white"> Hi user, thank you for clicking on my website.</p>
   </div>
   
@@ -74,12 +78,13 @@
      </div>
    
      <div class="nine wide column">
+       <iframe src="https://www.youtube.com/embed/Y1BlT4_c_SU" height='300px' width="500px"></iframe>
     <div class=" ui raised segments">
-         <div class= "box3 animated bounceInRight ui purple inverted segment"> <h1 class= "white"><i class="male icon"></i>  Biography </h1>
+         <div class= "box3 animated bounceInRight ui purple inverted segment"> <h1 class= "white" id="bio"><i class="male icon"></i>  Biography </h1>
        </div>
       <p class= "popup1 ui segment"> Hi my name is Smeet Shah, I am 12 years old. My birthday is <strong>June 26, 2005.</strong> I was born in <strong>Toronto, Ontario.</strong> I live in Toronto, Ontario and I go to <strong>Amesbuy Middle School.</strong> Im in the seventh grade. </p> </div>
 
-        <div class= "ui raised segments"> <div class="box4 animated bounceInLeft ui purple inverted segment" ><h1><p class= "white"><i class="soccer icon"></i> Some of my favorite sports are</p></h1>
+        <div class= "ui raised segments"> <div class="box4 animated bounceInLeft ui purple inverted segment" ><h1><p class= "white" id="sports"><i class="soccer icon"></i> Some of my favorite sports are</p></h1>
           <body/></div>
           <ol class= "ui segment"> <li>Basketball</li>
           <li> Soccer (goal keeper)</li>
@@ -88,12 +93,32 @@
        
        
         <div class="ui raised segments">
-          <div class="box 5 animated bounceInRight ui purple inverted segment"> <h1 class= "white"> <i class="game icon"></i> Some of my favorite video games </h1>
+          <div class="box 5 animated bounceInRight ui purple inverted segment"> <h1 class= "white" id="games"> <i class="game icon"></i> Some of my favorite video games </h1>
          </div>
           <ol class= "ui segment"> <li> 2k17 and all the other 2k's (Im a very big fan of basketball video games and in genral</li>
             <li> MLB the Show 16/17</li>
             <li> All the Pokemon games except Pokemon Ranger that game was trash</li></ol>
      </div>
+       
+       <div class="ui raised segments">
+         <div class="ui purple inverted segment">
+           <h2 id='number'>Lucky Numbers</h2>
+         </div>
+
+         <div class="ui segment numz">
+           <p>These are my lucky numbers:</p>
+
+           <ul>
+
+             <li>1 (one)</li>
+             <li>6 (six)</li>
+             <li>11 (eleven)</li>
+             <li>26 (twenty-six)</li>
+             <li>37 (thirty-seven)</li>
+
+           </ul>
+         </div>
+       </div>  
          
 
          <div class="ui raised segments">
@@ -190,7 +215,7 @@
                <div class="meta">
                  <span></span>
                </div>
-               <div class="description">
+               <div class="description"><i class="red marker icon"></i>
                  <p>Air Canada Centre, Toronto, ON M5E 1Z8</p>
                </div>
                <div class="extra">
@@ -201,7 +226,12 @@
            </div>
         </div> 
        </div>
-         <div class="ui raised segments"> 
+         
+         
+         
+         
+         
+         <div class="ui raised segments down3"> 
            <div class="ui purple inverted segment">
              <h1 class="white"> Comments </h1>
            </div>
@@ -221,18 +251,18 @@
          <div class="ui segment">
            <div class="ui fluid card">
              <div class="image">
-               <img src="https://semantic-ui.com/images/avatar/large/daniel.jpg">
+               <img src="https://i.pinimg.com/736x/66/12/7a/66127a9bdf5c5f62402331976c0d9f7e--pet-breeds-cute-dog-breeds.jpg">
              </div>
              <div class="content">
-               <a class="header">Daniel Louise</a>
+               <a class="header">Issac Carlton</a>
              </div>
            </div>
            <div class="ui fluid card">
              <div class="image">
-               <img src="https://semantic-ui.com/images/avatar/large/helen.jpg">
+               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAARVBMVEXwUSX9uBMyoNp/u0L////vRgz9tQAgnNj+4K6z1u54uDXK4bf4u7HI4LSw1O7+3qpytSX84d3n8d/e7ff/8dzvOgAAl9dLDuhEAAABIElEQVR4nO3PNw4CQRAAwQHOe+z/n0rKpgQj7an6A62KSKpdmt/m6ZZUFpCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQ8JTCNql3KVyPKalYsroXwsc6JxXN2SOsP8L6I6w/wvojrD/C+osxqe1ZfF/7kFT0SX22Qrh3WcU1qX4shEN3SYqQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkPD/vqoyjotFDAjwAAAAAElFTkSuQmCC">
              </div>
              <div class="content">
-               <a class="header">Helen Troy</a>
+               <a class="header">Microsoft</a>
              </div>
            </div>
            <div class="ui fluid card">
