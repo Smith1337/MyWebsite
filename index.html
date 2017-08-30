@@ -6,16 +6,22 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
   <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
   <link href="style.css" rel="stylesheet">
-  <script src="script.js"></script>
   <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwhwzuYqcXRjqamI5AdLCsl9x77TkLVpE&callback=initMap"></script>
+  <script src="script.js"></script>
 </head>
   <div class="ui top inverted purple fixed menu">
+    <div class="item">
+      <img src="https://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif">
+    </div>
     <a class="item" href="#intro">Introduction</a>
     <a class="item" href="#bio">Biography</a>
     <a class="item" href="#sports">Favorite Sports</a>  
     <a class="item" href="#games"> Favorite Games</a>
     <a class="item" href="#number"> Lucky Numbers</a>
+    <a class="item" href="#movies"> Movie Reviews</a>
+    <a class="item" href="#check"> Check-In</a>
+    <a class="item" href="#comments"> Comments</a>
   </div>
 <body>
   <div id="fb-root"></div>
@@ -26,7 +32,7 @@
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-  <div class="banner"> 
+  <div class="banner down2"> 
     <h1 class="down white" id="intro"> Welcome to my <strong>amazing</strong> Website!</h1> 
     <p class= " side white"> Hi user, thank you for clicking on my website.</p>
   </div>
@@ -59,6 +65,7 @@
            <div class="item"><i class=" red Like icon"></i> 1.5m Loves </div>
          </div>
          <button class="ui primary button">Like</button>
+         <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
          <button class="ui red button">Love</button>
        </div>
        <div class="ui raised segments">
@@ -198,7 +205,7 @@
        
        <div class="ui raised segments">
          <div class="ui purple inverted segment">
-           <h1 class="white"> <i class="map pin icon"></i> Check-In </h1>
+           <h1 class="white" id="Check"> <i class="map pin icon"></i> Check-In </h1>
            <div class="item">
            <div class="image">
            </div>
@@ -221,10 +228,32 @@
                <div class="extra">
                  "The Me to We concert that took place at the Air Canada Center was really fun! Special preformences from Zendaya, Macklemore and Lily Singh"
                </div>
-               <div id='map'></div>
              </div>
            </div>
-        </div> 
+           <div id='map1'></div>
+        </div>
+         </div>
+          <div class= "ui segment">
+          <div class="ui items">
+            <div class="item">
+              <div class="image">
+                <img src="https://s3-media2.fl.yelpcdn.com/bphoto/kBJxZ5BJGhtCuEIREhaXDg/o.jpg">
+              </div>
+              <div class="content">
+                <a class="header">SilverCity Yorkdale Cinemas</a>
+                <div class="meta">
+                  <span></span>
+                </div>
+                <div class="description"><i class="red marker icon"></i>
+                  <p>3401 Dufferin St, North York, ON M6A 2T9</p>
+                </div>
+                <div class="extra">
+                  "The movie me, my brother and his friends went to watch was Logan. His friends were really fun to hang out with. The movie was really loud because of screaming happing. I would definetly go here again"
+                </div>
+              </div>
+            </div>
+            <div id='map2'></div>
+          </div> 
        </div>
          
          
@@ -233,7 +262,7 @@
          
          <div class="ui raised segments down3"> 
            <div class="ui purple inverted segment">
-             <h1 class="white"> Comments </h1>
+             <h1 class="white" id="comments"> Comments </h1>
            </div>
            <div class="ui segment">
              <div class="fb-comments" data-href="https://smith1337.github.io/MyWebsite/" data-width="105%"  data-numposts="5"></div>
